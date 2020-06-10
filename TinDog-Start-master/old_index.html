@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>TinDog</title>
+
+  <!--Google fonts
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">  -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+
+
+
+  <!-- if we didnt write the below line,then there wud be not much styling -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!--this is for embedding fontawesome in our code
+  <script src="https://use.fontawesome.com/bd81ecd733.js">
+  </script>
+  <!--out of the 3, the below line worked-->
+  <script defer src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"></script>
+
+
+  <!--Inorder for the bootstrap collapsable menu to work,u actually need js & jquery,so add the below 3 lines from google -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <section id="title">
+    <!-- Nav Bar we wrote remaining all the below sections were in resources -->
+
+    <div class="container-fluid">
+      <!--refer notes for y we use cont-fluid -->
+
+
+      <nav class="navbar navbar-expand-lg navbar-dark">
+
+        <a class="navbar-brand" href="">tindog</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo2">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo2">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cta">Download</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+
+      <!-- Title -->
+      <!-- 50% by the 2 btns and rest 50 by the img -->
+      <div class="row">
+        <div class="col-lg-6 col-md-1 col-sm-1">
+          <h1>Meet new and interesting dogs nearby.</h1>
+          <!--btn specifies button in bootstrap and btn-dark specifies color of the btn so it is the class n btn-lg is the size of the btn.The <i></i>
+         is the italic tag, which here is used for the apple icon in our Download btn -->
+          <button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-apple"></i> Download</button>
+          <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fab fa-google-play"></i> Download</button>
+        </div>
+
+        <div class="col-lg-6 col-md-1 col-sm-1">
+          <img src="images/iphone6.png" alt="iphone-mockup" class="title-image">
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- Features -->
+
+  <section id="features">
+    <div class="row">
+      <div class="feature-box col-lg-4">
+        <!--col-lg-4 means on larger screens,it will take 1/3rd of the screen -->
+        <i class="fas fa-check-circle fa-4x icon"></i>
+        <!--gave a custom class "icon" to our font awsm class -->
+        <p>
+        <h3> Easy to use.</h3>
+        </p>
+        <p>So easy to use, even your dog could do it.</p>
+      </div>
+
+      <div class="feature-box col-lg-4">
+        <i class="fas fa-bullseye fa-4x icon"></i>
+        <h3>Elite Clientele</h3>
+        <p>We have all the dogs, the greatest dogs.</p>
+      </div>
+
+      <div class="feature-box col-lg-4">
+        <i class="fa fa-heart fa-4x icon"></i>
+        <h3>Guaranteed to work.</h3>
+        <p>Find the love of your dog's life or your money back.</p>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- Testimonials -->
+
+  <section id="testimonials">
+
+    <!--copied from bootstrap documentation for carousel -->
+    <div id="testimonial-carousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h2>I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
+          <img class="testimonial-image" src="images/dog-img.jpg" alt="dog-profile">
+          <em>Pebbles, New York</em>
+        </div>
+        <div class="carousel-item">
+          <h2 class=" testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
+          <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
+          <em>Beverly, Illinois</em>
+        </div>
+      </div>
+      <br>
+      <br>
+      <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <br>
+      <br>
+      <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </section>
+  <!-- Press -->
+
+  <section id="press">
+    <img class="press-logo" src="images/techcrunch.png" alt="tc-logo">
+    <img class="press-logo" src="images/tnw.png" alt="tnw-logo">
+    <img class="press-logo" src="images/bizinsider.png" alt="biz-insider-logo">
+    <img class="press-logo" src="images/mashable.png" alt="mashable-logo">
+
+  </section>
+
+
+  <!-- Pricing -->
+
+  <section id="pricing">
+
+    <h2>A Plan for Every Dog's Needs</h2>
+    <p>Simple and affordable price plans for your and your dog.</p>
+
+
+    <div class="row">
+      <div class="col-lg-4 col-md-6 pricing-column">
+      <div class="card">
+        <div class="card-header">
+          <h3>Chihuahua</h3>
+        </div>
+        <div class="card-body">
+          <h2>Free</h2>
+          <p>5 Matches Per Day</p>
+          <p>10 Messages Per Day</p>
+          <p>Unlimited App Usage</p>
+          <button class="btn btn-lg btn-block btn-outline-dark" type="button">Sign Up</button> <!--inline css for button using btn bootstrp classes-->
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 pricing-column">
+      <div class="card">
+        <div class="card-header">
+          <h3>Labrador</h3>
+        </div>
+        <div class="card-body">
+          <h2>$49 / mo</h2>
+          <p>Unlimited Matches</p>
+          <p>Unlimited Messages</p>
+          <p>Unlimited App Usage</p>
+          <button class="btn btn-lg btn-block btn-dark" type="button">Sign Up</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-12 pricing-column">
+      <div class="card">
+        <div class="card-header">
+          <h3>Mastiff</h3>
+        </div>
+        <div class="card-body">
+          <h2>$99 / mo</h2>
+          <p>Pirority Listing</p>
+          <p>Unlimited Matches</p>
+          <p>Unlimited Messages</p>
+          <p>Unlimited App Usage</p>
+          <button class="btn btn-lg btn-block btn-dark" type="button">Sign Up</button>
+        </div>
+      </div>
+    </div>
+    </div>
+
+  </section>
+
+
+  <!-- Call to Action -->
+
+  <section id="cta">
+
+    <h3 class="cta-heading">Find the True Love of Your Dog's Life Today.</h3> <!-- gave it a custom class,as h3 already has sm properties
+      which we gave it earlier,so now if we add any other ,it will override the previous values of h3 -->
+    <button type="button" class="download-button btn btn-lg btn-dark" ><i class="fab fa-apple"></i> Download</button>
+    <button type="button" class="download-button btn btn-lg btn-outline-light"><i class="fab fa-google-play"></i> Download</button>
+
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer id="footer">
+    <i class="social-icons fab fa-facebook-f"></i>
+    <i class="social-icons fab fa-twitter"></i>
+    <i class="social-icons fab fa-instagram"></i>
+    <i class="social-icons fas fa-envelope"></i>
+
+    <p>© Copyright 2020 TinDog</p>
+
+  </footer>
+
+
+</body>
+
+</html>

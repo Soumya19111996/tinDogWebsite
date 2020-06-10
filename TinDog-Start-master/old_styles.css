@@ -1,0 +1,197 @@
+body
+{
+  font-family: 'Montserrat';
+
+
+}
+#title
+{
+
+  background-color: #ff4c68;
+  color:#fff;
+  }
+
+h1
+{
+  font-family: "Montserrat";
+  font-size: 4rem;
+  line-height:1.5;
+
+
+}
+
+h2
+{
+  font-family: "Montserrat";
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/*for easy to use n etc headings on 2nd pg*/
+h3
+{
+  font-family: "Montserrat";
+}
+
+p
+{
+  color: #8f8f8f;
+}
+.container-fluid
+{
+  padding: 3% 15% 7%;
+  /***top,lnr,bottom ***/}
+
+/*download btns */
+.download-button
+{
+  margin: 5% 3% 5% 0;
+  font-style: normal;
+  font-weight: 100;
+}
+
+.icon
+{
+  color:#ef8172;
+  margin-bottom: 1rem;
+}
+
+/**below is the pseudo class,for the icon class,whose color changes on hovering **/
+.icon:hover
+{
+  color:#ff4c68;
+}
+
+.navbar-brand
+{
+  font-family: Ubuntu;
+  font-size: 2.5rem;
+  font-weight: normal;
+
+}
+.navbar
+{
+  padding: 0 0 4.5rem;
+}
+.nav-item
+{
+  padding: 0 18px;
+}
+.nav-link
+{
+  font-size: 1.2rem;
+  font-family: "Montserrat-light";
+}
+
+/*the phn image*/
+.title-image
+{
+  width: 60%; /*of its width*/
+  transform: rotate(25deg);
+  position:absolute;
+   /*** z-index: -1;
+   this was hiding our image completely,as we knw that by default the z-index fr any element=0 **/
+   right: 30%;
+}
+
+/*features section*/
+#features
+{
+  padding: 7% 15%; /* 7% for top n bottom and 15 for left n rt */
+  background-color: #fff;
+  z-index: 1;
+  position: relative; /***relative bcz it keeps the element in flow of the document **/
+
+}
+
+.feature-box
+{
+  text-align: center;
+  /**to make our text shorter n easier to read we add padding now */
+  padding: 5%;
+}
+/*Testimonials section*/
+#testimonials
+{
+
+  text-align: center;
+  background-color: #ef8172;
+  color: #fff;
+}
+.testimonial-image
+{
+  width: 10%;
+  border-radius: 100% /** to make it a circular image **/
+
+}
+
+.carousel-item
+{
+  padding: 7% 15%;
+}
+
+#press
+{
+background-color: #ef8172;
+text-align: center;
+padding-bottom: 3%;
+}
+
+.press-logo
+{
+  margin: 20px 20px 50px;
+  width: 15%;
+}
+/**Pricing section**/
+#pricing
+{
+  padding: 100px; /** to all the 4 sides**/
+  text-align: center;
+}
+
+
+/**to have some space btwn these pricing divs and outer window **/
+.pricing-column
+{
+  padding: 3% 2%; /**3 for top n btm and 2% for left n rt**/
+}
+
+/**CTA section**/
+#cta
+{
+  background-color: #ff4c68;
+  color:#fff;
+  padding: 7% 15%;
+  /** top&btm , lnr**/
+
+  text-align: center;
+}
+.cta-heading
+{
+  font-family: "Montserrat";
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+#footer
+{
+  padding: 7% 15%;
+  text-align: center;
+}
+.social-icons
+{
+  margin: 20px 10px;
+}
+
+
+
+@media (max-width: 1037px)
+{
+
+  .title-image
+  {
+    position: static;
+    transform: rotate(0);
+  }
+
+
+}
